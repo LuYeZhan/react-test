@@ -51,4 +51,4 @@ Keypress: In this custom made hook we define the keyboard accesible features
 
 ## Demo link.
 
-[Demo](https://luyezhan.github.io/react-test/)
+[Demo](https://react-frontend-assesment.herokuapp.com/)
