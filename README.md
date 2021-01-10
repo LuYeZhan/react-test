@@ -12,7 +12,7 @@ React Hooks, Axios, Sass
 
 ## Container
 
-GithubPage: which handles the data proveeded by the github API, here we do a debounce, we only do a query if the user stops typing for more than 0.5 seconds
+GithubPage: which handles the data proveeded by the github API, here we do a debounce, we only do a query if the user stops typing for more than 0.6 seconds
 
 ## Components
 
@@ -25,15 +25,15 @@ GithubPage: which handles the data proveeded by the github API, here we do a deb
 ## Features
 
 Keyboard accesible:
-● Arrow ↓: highlight next autocomplete result. If the last one is highlighted,
+Arrow ↓: highlight next autocomplete result. If the last one is highlighted,
 don’t do anything.
-● Arrow ↑: highlight previous autocomplete result. If the first one is highlighted,
+Arrow ↑: highlight previous autocomplete result. If the first one is highlighted,
 don’t do anything.
-● Enter ↩: go to the highlighted result’s user github profile page
+Enter ↩: go to the highlighted result’s user github profile page
 
 Mouse accesible:
-● onHover: highligh the item we hover on, we change the background and the color of the username
-● onClick: go to the highlighted result’s user github profile page
+onHover: highligh the item we hover on, we change the background and the color of the username
+onClick: go to the highlighted result’s user github profile page
 
 ## Responsive
 
