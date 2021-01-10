@@ -25,15 +25,17 @@ GithubPage: which handles the data proveeded by the github API, here we do a deb
 ## Features
 
 Keyboard accesible:
-Arrow ↓: highlight next autocomplete result. If the last one is highlighted,
-don’t do anything.
-Arrow ↑: highlight previous autocomplete result. If the first one is highlighted,
-don’t do anything.
-Enter ↩: go to the highlighted result’s user github profile page
+
+- Arrow ↓: highlight next autocomplete result. If the last one is highlighted,
+  don’t do anything.
+- Arrow ↑: highlight previous autocomplete result. If the first one is highlighted,
+  don’t do anything.
+- Enter ↩: go to the highlighted result’s user github profile page
 
 Mouse accesible:
-onHover: highligh the item we hover on, we change the background and the color of the username
-onClick: go to the highlighted result’s user github profile page
+
+- onHover: highligh the item we hover on, we change the background and the color of the username
+- onClick: go to the highlighted result’s user github profile page
 
 ## Responsive
 
@@ -43,10 +45,10 @@ It is a responsive web page, it works on desktop, mobile and table devices.
 
 getUsersData: In this service we define the requests and we pass the input value as a parameter
 
-## Hooks
+## Hooks
 
 Keypress: In this custom made hook we define the keyboard accesible features
 
-## Demo link.
+## Demo link.
 
 [Demo](https://luyezhan.github.io/react-test/)
