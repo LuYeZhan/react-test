@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+React Frontend Developer
+Technical Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This assignment consists of creating a search field with autocomplete functionality.
+As the user types, github users will show up in the autocomplete results.
 
-In the project directory, you can run:
+## Devstacks
 
-### `yarn start`
+React Hooks, Axios, Sass
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Container
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+GithubPage: which handles the data proveeded by the github API, here we do a debounce, we only do a query if the user stops typing for more than 0.5 seconds
 
-### `yarn test`
+## Components
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+— Input: a input field where the user types search keywords. Here we handle the values that goes to the queries.
 
-### `yarn build`
+— Results: In this component we handle the data that's been passed from GithubPage. Here we define all the interactions that the users can do.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+— Result Item: Here we render each item of the results
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Keyboard accesible:
+● Arrow ↓: highlight next autocomplete result. If the last one is highlighted,
+don’t do anything.
+● Arrow ↑: highlight previous autocomplete result. If the first one is highlighted,
+don’t do anything.
+● Enter ↩: go to the highlighted result’s user github profile page
 
-### `yarn eject`
+Mouse accesible:
+● onHover: highligh the item we hover on, we change the background and the color of the username
+● onClick: go to the highlighted result’s user github profile page
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Responsive
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+It is a responsive web page, it works on desktop, mobile and table devices.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Services
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+getUsersData: In this service we define the requests and we pass the input value as a parameter
 
-## Learn More
+## Hooks
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Keypress: In this custom made hook we define the keyboard accesible features
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Demo link.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Demo](https://luyezhan.github.io/react-test/)
