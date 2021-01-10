@@ -1,0 +1,27 @@
+.avatar {
+  width: 65px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.username {
+  padding-left: 1em;
+  color: black;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.item-container {
+  margin: 0.25em 0;
+  border-radius: 0.3em;
+}
+
+.active {
+  background: #526899;
+  & > a > li > p {
+    color: white;
+    font-weight: bold;
+  }
+}

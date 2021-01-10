@@ -1,0 +1,22 @@
+.icon {
+  background: url(../../assets/icons/search-icon.png) no-repeat scroll 7px 7px;
+  padding-left: 30px;
+  width: 14px;
+  height: 35px;
+  background-size: 50% 50%;
+}
+
+.search {
+  width: 275px;
+  align-items: center;
+  margin: 1em;
+  border-radius: 0.3em;
+  height: 50px;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

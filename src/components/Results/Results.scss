@@ -1,0 +1,18 @@
+.list {
+  list-style: none;
+  padding: 0;
+  background-color: white;
+  min-width: 275px;
+  border-radius: 0.25em;
+  filter: drop-shadow(1px 2px 4px #585858);
+  & :first-child {
+    margin-top: 0;
+  }
+  & :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.label {
+  color: #787776;
+}
