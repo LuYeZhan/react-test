@@ -7,11 +7,11 @@ As the user types, github users will show up in the autocomplete results.
 
 ## Use of this repository
 
-After you Clone this repository.
+After you clone this repository.
 
-**npm start** to run in your local development environment.
-**npm test** to run the tests and see the code coverage.
-**npm run testdev** to run the tests and watch changes on them.
+- **npm start** to run in your local development environment.
+- **npm test** to run the tests and see the code coverage.
+- **npm run testdev** to run the tests and watch changes on them.
 
 ## Devstacks
 
