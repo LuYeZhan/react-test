@@ -1,14 +1,21 @@
-React Frontend Developer
-Technical Assignment
+# React Frontend Developer Technical Assignment
 
 ## Description
 
 This assignment consists of creating a search field with autocomplete functionality.
 As the user types, github users will show up in the autocomplete results.
 
+## Use of this repository
+
+After you Clone this repository.
+
+**npm start** to run in your local development environment.
+**npm test** to run the tests and see the code coverage.
+**npm run testdev** to run the tests and watch changes on them.
+
 ## Devstacks
 
-React Hooks, Axios, Sass
+React Hooks, Axios, NodeJs, Sass. Jest, Enzyme for testing.
 
 ## Container
 
@@ -49,6 +56,6 @@ getUsersData: In this service we define the requests and we pass the input value
 
 Keypress: In this custom made hook we define the keyboard accesible features
 
-## Demo link.
+### Demo link.
 
 [Demo](https://react-frontend-assesment.herokuapp.com/)
