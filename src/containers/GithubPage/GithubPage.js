@@ -40,15 +40,19 @@ const GithubPage = () => {
           ];
           setResultsList(users);
         } else {
-          const users = res.data.items.slice(0, 7);
+          const users = res.data.items;
           setResultsList(users);
         }
       })
       .catch(console.warn);
   };
 
+  const closeList = () => {
+    setResultsList([]);
+  };
+
   return (
-    <div className='container'>
+    <div className='container' onClick={closeList}>
       <div>
         <div className='search flex'>
           <div className='icon'></div>
